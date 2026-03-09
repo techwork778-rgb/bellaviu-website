@@ -1,0 +1,87 @@
+.like-hotel-drawer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 10px;
+}
+
+.like-hotel-drawer  .like-hotel-drawer-heading {
+    color: #333;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 10px;
+    margin: 0;
+}
+
+.like-hotel-drawer  .like-hotel-list {
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.like-hotel-drawer .like-hotel-drawer-item {
+    border-bottom: 1px solid #ece8f8;
+}
+
+.like-hotel-drawer .list-item-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.like-hotel-drawer .like-hotel-drawer-img {
+    border-radius: 5px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.like-hotel-drawer .like-hotel-drawer-text span {
+    color: #333;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+
+.like-hotel-drawer .delete-btn {
+    color: #831919;
+}
+
+.like-hotel-drawer .drawer-bottom {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.like-hotel-drawer .drawer-buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 10px;
+    position: sticky;
+    bottom: 0;
+    background-color: white;
+}
+
+
+.like-hotel-drawer .clear-btn {
+    color:  var(--primary-color);
+    border-color:  var(--primary-color);
+    text-transform: capitalize;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+    letter-spacing: 0.5px;
+}
+
+.like-hotel-drawer .clear-btn:hover {
+    background-color:  var(--primary-color);
+    color: white;
+}
+
+.like-hotel-drawer .close-btn {
+    background-color: var(--primary-color);
+    color: white;
+    text-transform: capitalize;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+    letter-spacing: 0.5px;
+}

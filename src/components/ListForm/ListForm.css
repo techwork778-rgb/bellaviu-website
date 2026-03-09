@@ -1,0 +1,140 @@
+.input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 0;
+    background-color: #F5F8FA;
+   color: black;
+  }
+  .heading-start {
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+    color: #9c6c69;
+    margin-bottom: 20px;
+  }
+  .input.error {
+    /* border-color: red; */
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 12px;
+  }
+  
+  .required {
+    color: red;
+  }
+  
+  .form-actions {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .submit-button {
+    margin-top: 15px;
+    background-color: #a17e50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .submit-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Status messages */
+  .status {
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .success {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .error {
+    /* background-color: #dc3545; */
+    /* border: 1px solid red; */
+    color: white;
+  }
+  .list-prop-heading{
+    font-weight: 600;
+    padding: 30px 0;
+    color: #9c6c69;
+  
+  }
+  .list-property-con{
+    background-color: #FAFAFA;
+  }
+
+  .form-sub-btn {
+    background: transparent; /* Remove the background color */
+    color: #9c6c69; /* Set text color to the same as the original button background */
+    border: 2px solid #9c6c69; /* Add a border with the same color */
+    padding: 5px 10px;
+    font-family: "Urbanist", sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    font-size: 16px;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    transition: all 0.3s ease;
+  }
+  
+  .form-sub-btn::before {
+    content: '';
+    width: 0;
+    height: 500%;
+    position: absolute;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #9c6c69;
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+  }
+  
+  .form-sub-btn:hover::before {
+    width: 105%;
+  }
+  .form-sub-btn:hover{
+    color: #fff;
+  }
+  .loader {
+    border: 2px solid #f3f3f3; /* Light grey */
+    border-top: 2px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    animation: spin 1s linear infinite;
+    display: inline-block;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .form-sub-btn:disabled {
+    background-color: #ccc; /* Grey background */
+    cursor: not-allowed;
+  }
+  

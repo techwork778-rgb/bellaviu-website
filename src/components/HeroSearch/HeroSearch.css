@@ -1,0 +1,93 @@
+/* .search-bar {
+    background-color: transparent !important;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border: 2px solid "#9c6c6a";
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    flex-wrap: wrap;
+    width: 100%;
+  } */
+
+  .search-bar {
+    background-color: rgba(255, 255, 255, 0.1) !important; /* Semi-transparent background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    border: 2px solid rgba(255, 255, 255, 0.3); /* Light border with transparency */
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    flex-wrap: wrap;
+    width: 100%;
+    backdrop-filter: blur(10px); /* Apply the blur effect to create the glassmorphism effect */
+    padding: 10px; /* Add padding to give the elements some space */
+  }
+  
+  
+  /* .search-bar-grid-item {
+    border: 2px solid "#9c6c6a"; 
+    border-radius: 8px;
+  } */
+  .search-bar-textfield {
+    background-color: transparent !important; 
+    border: none !important; /* Remove border */
+    /* box-shadow: none !important; Remove any shadow */
+    /* border-radius: 8px; Optional: rounded corners if desired */
+    width: 100%;
+    padding: 10px; /* Add padding to the input */
+    /* backdrop-filter: blur(10px); Apply the blur effect */
+    /* border: 1px solid rgba(255, 255, 255, 0.3); Light border to enhance the glass effect */
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); Optional: add a soft shadow */
+    color: white; /* Make the input text white */
+  }
+
+  
+  /* To ensure the textfield fits well with the background */
+  .search-bar-textfield input {
+    color: white; /* Set the text color to white */
+  }
+  
+  .search-bar-textfield .MuiInputBase-root {
+    background-color: white; /* Ensure inner input has white background */
+    width: 100%;
+  }
+  .search-bar-grid {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  
+  /* .search-bar-textfield {
+  
+  } */
+  .search-bar-textfield .MuiOutlinedInput-root {
+    background-color: transparent !important; /* Ensure background is transparent */
+    border: none !important; /* Remove the border of the input */
+    box-shadow: none !important; /* Remove the box-shadow */
+  }
+  .search-bar-textfield .MuiInputBase-input {
+    color: white !important; /* Ensure input text is visible */
+  }
+  
+  .search-bar-textfield .MuiInputAdornment-root {
+    color: white !important; /* Change adornment icon color if needed */
+  }
+  .search-bar-button {
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    line-height: 33px;
+    background-color: transparent;
+    color: #fffcfc;
+    border: none; /* Ensure no border for clean scaling */
+    cursor: pointer; /* Adds a pointer cursor on hover */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth zoom-in and color transition */
+  }
+  
+  .search-bar-button:hover {
+    background-color: transparent;
+    color: white;
+    transform: scale(1.4); /* Zoom in effect */
+  }
+  

@@ -1,0 +1,85 @@
+.booking-list-wrapper {
+  list-style: none;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.booking-list-wrapper .booking-list {
+  padding: 15px;
+}
+.booking-list-wrapper {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.booking-list {
+  padding: 8px 0;
+  border-bottom: 1px solid #f0f0f0; /* Optional: adds a divider between items */
+}
+
+.booking-label {
+  font-weight: bold;
+  color: #555; /* Adjust color for label */
+}
+
+.booking-value {
+  text-align: right;
+  color: #000; /* Adjust color for value */
+}
+.pay-btn {
+  padding: 5px 12px;
+  border: 2px solid #9c6c69;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  /* text-transform: uppercase; */
+  font-size: 14px;
+  transition: .3s;
+  z-index: 1;
+  font-family: inherit;
+  color: #ffffff;
+  background-color: #9c6c69;
+}
+
+/* .pay-btn::before {
+  content: '';
+  width: 0;
+  height: 600%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: #9c6c69;
+  transition: .5s ease;
+  display: block;
+  z-index: -1;
+} */
+
+.pay-btn:hover::before {
+  width: 105%;
+}
+
+.pay-btn:hover {
+  color: #ffffff;
+}
+.pay-btn-container {
+  margin: 5px 15px;
+  display: flex;
+  justify-content: center; /* Align items to the end of the container horizontally */
+}
+/* In your style.css file */
+
+.active-tab {
+  background-color: #9c6c69 !important; /* Green color for active tab */
+  color: white !important;
+  border-radius: 5px;
+}
+
+.inactive-tab {
+  /* background-color: rgb(247, 239, 239) !important; Gray color for inactive tabs */
+  color: rgb(0, 0, 0) !important;
+  border-radius: 5px;
+}

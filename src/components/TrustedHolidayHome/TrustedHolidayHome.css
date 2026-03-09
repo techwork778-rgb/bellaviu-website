@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap');
+
+  
+  .trusted-title {
+    font-family: Urbanist, sans-serif;
+    font-weight: bold;
+    color: #9c6c69;
+    margin-bottom: 20px;
+  }
+  
+  .trusted-description {
+    font-size: 16px;
+    line-height: 1.5rem;
+    margin-bottom: 20px;
+  }
+  .heading-start {
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+    color: #9c6c69;
+    margin-bottom: 20px;
+  }
+  .trusted-list-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .trusted-property-list {
+    line-height: 1.8rem;
+    font-size: 15px;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 10px;
+
+  }
+  
+  
+  .trusted-property-list li::before {
+    content: '✔';
+    color: #9c6c69;
+    margin-right: 8px;
+  }
+  
+  .trusted-image {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  .add-property-page {
+    background: linear-gradient(to bottom, #01060d00, #01060d00), url('/listproperty.jpeg');
+  background-size: cover; /* Ensures the image covers the entire element */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-position: center; /* Centers the image */  
+    height: 100vh;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    color: white;
+    text-align: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Linear opacity effect */
+    z-index: 1;
+  }
+  
+  .content-container {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+  }
+  
+  .heading-porperties {
+    font-weight: 600;
+    margin-bottom: 16px;
+    font-family: "Urbanist", sans-serif !important;
+    /* text-transform: uppercase; */
+    font-size: 52px;
+    text-shadow: 1px 1px 3px rgba(68, 68, 68, 0.5);
+    ;
+  }
+  
+  .sub-heading {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .action-button {
+    font-size: 1rem;
+    padding: 0.7rem 2rem;
+    background-color: #1976d2;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .action-button:hover {
+    background-color: #155a9c;
+  }
+  
+.managep-button {
+  padding: 5px 15px;
+  border: 2px solid white;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: .3s;
+  z-index: 1;
+  font-family: inherit;
+  color: #ffffff;
+}
+
+.managep-button::before {
+  content: '';
+  width: 0;
+  height: 500%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: #9c6c69;
+  transition: .5s ease;
+  display: block;
+  z-index: -1;
+}
+
+.managep-button:hover::before {
+  width: 105%;
+}
+/* General Section Styles */
+.what-makes-us-section{
+  padding: 50px 20px;
+  background: #f9f9f9;
+}
+.counter-section {
+  /* padding: 20px 20px; */
+  background: #9c6c69;
+}
+
+/* Video Section */
+.video-section .video-container {
+  position: relative;
+  width: 100%;
+  max-width: 550px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.video-section .video-container:hover {
+  transform: scale(1.05);
+}
+
+.video-section .video-image {
+  width: 100%;
+  height: auto;
+}
+
+
+.video-section .play-icon svg {
+  color: #fff;
+  font-size: 40px;
+}
+
+/* Content Section */
+.content-section {
+  text-align: left;
+}
+
+.content-section .section-title {
+  font-family: "Urbanist", sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.content-section .highlight-text {
+  color: #9c6c69;
+  background: #9c6c69;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.highlight-text{
+  color: #9c6c69;
+  font-weight: bold;
+  font-size: 30px;
+}
+.content-section .description {
+  color: #666;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.content-section .feature-list {
+  color: #333;
+  list-style: none;
+  padding-left: 0;
+}
+
+.content-section .feature-list li {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 25px;
+}
+
+.content-section .feature-list li:before {
+  content: "✔";
+  color: #9c6c69;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.contact-button {
+  background: transparent; /* Remove the background color */
+  color: #9c6c69; /* Set text color to the same as the original button background */
+  border: 2px solid #9c6c69; /* Add a border with the same color */
+  padding: 5px 10px;
+  font-family: "Urbanist", sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: .3s;
+  z-index: 1;
+  font-family: inherit;
+  transition: all 0.3s ease;
+}
+
+.contact-button::before {
+  content: '';
+  width: 0;
+  height: 500%;
+  position: absolute;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: #9c6c69;
+  transition: .5s ease;
+  display: block;
+  z-index: -1;
+}
+
+.contact-button:hover::before {
+  width: 105%;
+}
+.contact-button:hover{
+  color: #fff;
+}
+
+/* Counter Section */
+.counter-section {
+  text-align: center;
+  padding: 40px 20px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.counter-box {
+  text-align: center;
+  /* margin-bottom: 30px; */
+}
+
+.counter-number {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.counter-text {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin: 0px;
+}
+.list-button {
+  background: transparent; /* Remove the background color */
+  color: #ffffff; /* Set text color to the same as the original button background */
+  border: 2px solid #ffffff; /* Add a border with the same color */
+  padding: 5px 10px;
+  font-family: "Urbanist", sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: .3s;
+  z-index: 1;
+  font-family: inherit;
+  transition: all 0.3s ease;
+}
+
+.list-button::before {
+  content: '';
+  width: 0;
+  height: 500%;
+  position: absolute;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: #ffffff;
+  transition: .5s ease;
+  display: block;
+  z-index: -1;
+}
+
+.list-button:hover::before {
+  width: 105%;
+}
+.list-button:hover{
+  color: #9c6c69;
+}
+
+@media screen and (max-width: 768px) {
+  .css-zow5z4-MuiGrid-root>.MuiGrid-item{
+    padding-left: 0px !important;
+  }
+}

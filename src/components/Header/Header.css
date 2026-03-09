@@ -1,0 +1,236 @@
+
+/* Logo */
+.logo {
+  margin-right: 16px;
+  display: flex;
+  font-weight: 700;
+  color: inherit;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+/* Centered Desktop Navigation */
+.desktop-nav {
+  flex-grow: 1;
+  justify-content: center;
+  display: flex;
+  gap: 2px;
+  font-size: 0.6rem;
+  font-weight: 400;
+}
+
+/* Navigation Buttons */
+.nav-button {
+  color: rgb(255, 255, 255) !important;
+  margin: 0 8px;
+  font-family: "Urbanist", sans-serif !important;
+  font-size: 15px;
+  padding: 8px 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+/* Hover Effects for Navigation Buttons */
+.nav-button:hover {
+  color: #ffffff;
+}
+.MuiAppBar-root.MuiAppBar-colorPrimary.MuiAppBar-positionFixed {
+  padding: 0px !important;
+}
+/* Bottom Underline on Hover */
+.nav-button::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #E2B5B0;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+}
+
+.nav-button:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* Active State */
+.nav-button.active {
+  color: #ffffff; /* Optional: to ensure consistency */
+}
+
+.nav-button.active::after {
+  transform: scaleX(1);
+  transform-origin: bottom left; /* Keeps animation consistency */
+}
+
+/* Mobile Menu Button */
+.mobile-menu-button {
+  margin-left: auto;
+  color: #E2B5B0;
+}
+
+.header-actions { 
+  display: flex;
+  align-items: center;
+ 
+}
+/* Responsive Design */
+@media (max-width: 900px) {
+  .desktop-nav {
+    display: none;
+  }
+  .header-actions {
+    margin-left: 16px;
+  }
+}
+
+@media (min-width: 901px) {
+  .mobile-menu-button {
+    display: none;
+  }
+}
+
+/* Modal Backdrop */
+.modalBackdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+/* Login Container */
+.login-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: #fff;
+}
+
+.login-title {
+  font-weight: bold;
+  font-family: "Urbanist", sans-serif !important;
+  margin-bottom: 16px;
+}
+
+/* Rounded Input Fields */
+.rounded-input .MuiOutlinedInput-root {
+  border-radius: 50px;
+}
+
+/* Forgot Password Link */
+.forgot-password-link {
+  font-size: 0.85rem;
+  color: #6c757d;
+  margin: 10px 0 !important;
+  text-decoration: none;
+}
+
+/* Login and Signup Buttons */
+.login-button,
+.signup-button {
+  background-color: #a17e50 !important;
+  color: #fff !important;
+  margin: 16px 0;
+  border-radius: 50px !important;
+  padding: 12px 0 !important;
+  font-size: 16px;
+}
+
+.signup-text {
+  margin: 16px 0;
+}
+
+.signup-link {
+  font-weight: bold;
+  color: #008080;
+}
+
+/* Google Login Button */
+.google-button {
+  margin-top: 16px;
+  border-radius: 50px;
+  padding: 10px 0;
+  color: #000;
+  border-color: #d9d9d9;
+}
+
+/* Google Login Container */
+.button-container {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+
+.login-with-google {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 30px !important;
+  width: 100%;
+  color: gray !important;
+  padding: 10px 0 !important;
+}
+
+.login-with-google img {
+  width: 20px;
+  height: 20px;
+}
+
+/* .header-appbar {
+  background-color: rgba(255, 255, 255, 0.005) !important;
+  transition: background-color 0.3s ease; 
+  box-shadow: none !important;
+  justify-content: center;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.header-appbar.scrolled {
+  background-color: black !important;
+  transition: background-color 0.3s ease;
+} */
+/* Header Initially Transparent */
+.header-appbar {
+  background-color: rgba(255, 255, 255, 0.2) !important; 
+  background-color: transparent;
+
+
+backdrop-filter: blur(10px); 
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18); /* Subtle border */
+  transition: background-color 0.3s ease, backdrop-filter 0.3s ease; /* Smooth transition */
+  /* box-shadow: none !important; */
+  /* box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.12); */
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  justify-content: center;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+/* When Scrolled */
+.header-appbar.scrolled {
+  background-color: rgb(27, 26, 26) !important; /* Change background to white */
+  transition: background-color 0.3s ease;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+
+
+.action-button {
+  background: rgba(255, 255, 255, 0.1) !important;
+}

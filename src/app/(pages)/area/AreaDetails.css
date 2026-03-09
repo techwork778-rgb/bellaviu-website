@@ -1,0 +1,200 @@
+/* components/HeroSection.css */
+
+.hero-section {
+  background: linear-gradient(to bottom, #01060d65, #01060d65), url('/hero-bg.jpeg');
+  background-size: cover; /* Ensures the image covers the entire element */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-position: center; /* Centers the image */  
+    height: 100vh;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    color: white;
+    text-align: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero-title {
+    font-weight: bold;
+    margin-bottom: 16px;
+    font-family: "Urbanist", sans-serif !important;
+  }
+  
+  .hero-description {
+    margin-bottom: 32px;
+    font-family: "Urbanist", sans-serif !important;
+  }
+  
+
+  
+  /* .search-item:last-child {
+      margin-right: 0; 
+    } */
+  
+  /* .search-button {
+      flex-shrink: 0; 
+    margin-top: 0; 
+    } */
+    .listings-page {
+      font-family: Arial, sans-serif;
+      color: #333;
+      background-color: #f0f0f0;
+      padding: 20px;
+    }
+    .outline-button {
+      padding: 10px 20px;
+      font-size: 16px;
+      color: #131414;
+      background-color: transparent;
+      border: 1px solid rgb(199, 198, 198);
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    
+    .description {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+    
+    .input-group {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
+    
+    .input-label {
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    
+    .select {
+      min-width: 150px;
+    }
+    .button-row {
+      display: flex;
+      gap: 10px; /* Adjust spacing between buttons */
+      margin-bottom: 20px;
+    }
+    .search-property{
+      display: flex;
+      justify-content: space-between;
+    }
+    .archive-found-posts {
+      font-size: 18px;
+      color: #333; /* Text color */
+      font-weight: 400;
+      display: flex;
+      align-items: center;
+      gap: 5px; /* Space between number and text */
+      margin-bottom: 20px; /* Add space below the text */
+    }
+    
+    .found-number {
+      font-weight: 700; /* Bold number */
+      color: #0c0c0c; /* Highlighted color for the number */
+      font-size: 20px; /* Slightly larger font for emphasis */
+    }
+    .amenities-input {
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    
+    .search-button {
+      padding: 10px 20px;
+      font-size: 16px;
+      color: white;
+      background-color: #b199a8;
+      border: none; /* No border or outline */
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .apply-button{
+      padding: 5px 10px;
+      font-size: 14px;
+      color: white;
+      background-color: #b199a8;
+      border: none; /* No border or outline */
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+    }
+    .clear-button {
+      padding: 5px 10px;
+      font-size: 14px;
+      color: #b199a8; /* Text color */
+      background-color: transparent; /* Transparent background */
+      border: 2px solid #b199a8; /* Border color matching text */
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .clear-button:hover {
+      background-color: #b199a8; /* Light background on hover */
+      color: white; /* Text color changes on hover */
+  }
+    .search-button:hover {
+      background-color: #c7adbd;
+      transform: translateY(-2px); /* Slight lift on hover */
+    }
+    
+    .search-button:focus {
+      outline: none; /* Prevent default outline on focus */
+    }
+
+    @media screen and (max-width: 600px) {
+      .hero-title {
+        font-size: 2rem !important;
+      }
+      .hero-search-card .search-input{
+        width: 100%;
+        font-size: 16px;
+        line-height: 18px;
+        color: #000;
+        font-weight: 400;
+        outline: none;
+        padding: 12px !important;
+        border: 0.8px solid gray;
+        border-radius: 35px !important;
+        margin: 15px auto;
+        
+
+      }
+      .search-input::placeholder{
+     margin-left: 10px;
+      }
+      .date-picker-range{
+        border: 0.8px solid gray;
+        font-size: 10px !important;
+        border-radius: 35px !important;
+        margin-bottom: 5px !important;
+      }
+      .hero-search-card .date-picker-range input {
+        padding: 8px !important;
+        font-size: 12px;
+      }
+      .hero-search-card .custom-input-label{
+        padding: 4px 0;
+      }
+ 
+        .listings-container {
+          display: none;
+        }
+    
+      
+    }

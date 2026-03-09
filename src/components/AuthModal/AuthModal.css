@@ -1,0 +1,15 @@
+.auth-dialog{
+    font-family: "Urbanist", sans-serif !important;
+}
+
+@media (max-width: 600px) {
+    .auth-dialog .MuiDialog-paper {
+      width: 90%;
+      max-width: 400px; /* Adjust for smaller screens */
+    }
+  
+    .auth-dialog .btn-theme2 {
+      width: 100%; /* Full-width button on small screens */
+    }
+  }
+  

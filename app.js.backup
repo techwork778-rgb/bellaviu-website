@@ -1,0 +1,17 @@
+const { createServer } = require('http')
+const { parse } = require('url')
+const next = require('next')
+
+const dev = process.env.NODE_ENV !== 'production'
+const port = 3001
+
+const app = next({ dev })
+const handle = app.getRequestHandler()
+
+app.prepare().then(() => {
+  creatServer((req, res) => {
+     const parselUrl = parse(req.url, true)
+	handle(req, res, parselurl)
+	}).listen(port, '0.0.0.0', () =>{
+	    console.log(`BellaViu running on port ${port}`)
+	})

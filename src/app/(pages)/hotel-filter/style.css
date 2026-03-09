@@ -1,0 +1,135 @@
+/* style.css */
+
+.hotel-container {
+  margin-top: 100px;
+}
+
+.breadcrumb-container {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  text-align: center;
+  font-weight: bold;
+}
+
+.filter-box {
+  width: 100%;
+  padding: 16px;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+}
+
+.filter-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.reset-button {
+  color: grey;
+}
+
+.price-range-slider {
+  margin-bottom: 8px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.price-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+
+.star-rating-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.star-rating-item {
+  display: flex;
+  align-items: center;
+}
+
+.apply-button {
+  background-color: #a17e50;
+  color: white;
+}
+
+.results-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.no-hotels-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 32px;
+}
+
+.no-hotels-title {
+  margin-bottom: 16px;
+  color: red;
+  text-align: center;
+}
+
+.no-hotels-text {
+  text-align: center;
+  color: gray;
+}
+
+.pagination {
+  margin-top: 20px;
+  color: #a17e50;
+  margin: 10px 0;
+}
+
+.AdvanceSearch {
+  font-size: "16px";
+  color: "#3d3e3f";
+}
+.filter-apply-button{
+  width: 100%;
+  padding: 0.4em 1em;
+  border: 2px solid #9c6c69;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: .3s;
+  z-index: 1;
+  font-family: inherit;
+  color: #9c6c69;
+
+}
+
+.filter-apply-button::before {
+  content: '';
+  width: 0;
+  height: 1400%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: #9c6c69;
+  transition: .5s ease;
+  display: block;
+  z-index: -1;
+}
+.filter-apply-button:hover::before {
+  width: 200%;
+}
+
+.filter-apply-button:hover {
+  color: #ffffff;
+}

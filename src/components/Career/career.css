@@ -1,0 +1,64 @@
+.career-container{
+    margin-top: 50px !important;
+}
+.career-grid{
+    padding: 20px !important;
+}
+
+.career-item2{
+background-color: #FAFAFA;
+    padding: 20px;
+}
+.career-item{
+        padding: 20px;
+}
+.section-head{
+font-size: var(--extra-large-font-size);
+font-weight: 700;
+text-transform: capitalize;
+text-align: center;
+line-height: 1.1em;
+color: #000000;
+font-family: "Urbanist", sans-serif !important;
+}
+.hero-duo-button {
+    padding: 5px 5px;
+    border: 2px solid #9c6c69;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: #9c6c69;
+  }
+  
+  .hero-duo-button::before {
+    content: '';
+    width: 0;
+    height: 400%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #9c6c69;
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+  }
+  
+  .hero-duo-button:hover::before {
+    width: 105%;
+  }
+  
+  .hero-duo-button:hover {
+    color: #ffffff;
+  }
+  .hero-duo-button-filled{
+    background-color: #9c6c69;
+    color: rgb(255, 255, 255);
+  
+  }

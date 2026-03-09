@@ -1,0 +1,84 @@
+.services-card {
+  cursor: pointer;
+  background-color: transparent;
+  box-shadow: none !important;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+  border-radius: 16px !important;
+}
+
+.services-card .service-image {
+  border-radius: 16px !important;
+}
+
+.services-card .service-title {
+  color: #121212;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.services-card .service-description {
+  color: #4f5e71;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.custom-button-tab {
+  padding: 15px 20px;
+  border: 1px solid #0000004e;
+  background-color: transparent;
+  color: #9c6c69;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 14px;
+  font-weight: bold;
+  outline: none;
+}
+
+.custom-button-tab:first-of-type {
+  border-left: 1px solid #9c6c69;
+}
+
+.custom-button-tab:hover {
+  background-color: #9a6d69;
+  border-color: #190e0d7b;
+  color: #fff;
+}
+
+.custom-button-tab--filled {
+  background-color: #9c6c69;
+  color: #fff;
+}
+
+.custom-button-tab--outline {
+  background-color: transparent;
+  color: #9c6c69;
+}
+
+.custom-button-tab + .custom-button-tab {
+  margin-left: -1px;
+}
+/* Scoped Styles for Material UI Tabs */
+
+.bv-tabs-root {
+  border: 1px solid rgba(189, 144, 136, 0.15);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.03);
+}
+
+.bv-tabs-item {
+  letter-spacing: 0.3px;
+}
+
+.bv-tabs-active {
+  /* Class applied to the active tab for extra specificity if needed */
+}
+
+/* Hide scrollbar for mobile luxury feel */
+.bv-tabs-root .MuiTabs-scroller {
+  scrollbar-width: none; /* Firefox */
+}
+
+.bv-tabs-root .MuiTabs-scroller::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}

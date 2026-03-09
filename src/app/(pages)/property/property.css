@@ -1,0 +1,98 @@
+.container-fluid {
+  position: relative;
+  background-image: url("/hero-bg.jpeg"); /* Path to your background image */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* You can adjust the height of the banner */
+}
+body{
+  background-color: #f3f3f3;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.textWrapper {
+  text-align: center;
+  color: white;
+  padding: 50px;
+}
+
+.heading {
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.subheading {
+  font-size: 1rem;
+}
+
+/* For Card Grid Layout */
+.card-container {
+  padding: 3rem;
+}
+
+.card-item {
+  margin-top: 20px;
+}
+.seeMore-btn{
+  margin-top: 20px !important;
+  border-radius: 25px !important;
+  width: 150px !important;
+  padding: 12px  !important;
+  background-color: #9c6c69 !important;
+  color: white !important;
+}
+.Fujaira-title {
+  color: #8d5b57;
+  font-family: "Roboto", Sans-serif;
+  font-size: 26px;
+  font-weight: 500;
+  border-bottom: 2px solid #9c6c69;
+  text-align:start; /* Optional: centers the title text */
+  margin: 0 auto; /* Optional: centers the element within its container */
+  display: inline-block; /* Ensures the width is applied */
+}
+
+
+
+@media screen and (max-width:600px) {
+  .textWrapper {
+    text-align: center;
+    color: white;
+    padding: 5px;
+  }
+  .subheading {
+    font-size: 1rem;
+  }
+  .container-fluid {
+      position: relative;
+      background-image: url("/hero-bg.jpeg"); /* Path to your background image */
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 70vh; /* You can adjust the height of the banner */
+    }
+    .heading {
+      margin-bottom: 20px;
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+    
+}

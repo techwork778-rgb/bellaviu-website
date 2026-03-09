@@ -1,0 +1,180 @@
+/* DubaiAreasShowcase.css */
+
+.bv-area-section-root {
+  padding: 80px 0;
+  background-color: #faf9f6; /* Luxury Silk Beige */
+  font-family: 'Inter', sans-serif;
+  overflow: hidden;
+  position: relative;
+}
+
+.bv-area-text-center {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.bv-area-overline {
+  color: #bd9088;
+  font-weight: 700 !important;
+  letter-spacing: 4px !important;
+  text-transform: uppercase;
+}
+
+.bv-area-main-heading {
+  font-weight: 800 !important;
+  color: #1a1a1a;
+  margin: 10px 0 !important;
+  font-size: 3.2rem !important;
+  letter-spacing: -1px;
+}
+
+.bv-area-italic {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 500;
+  color: #bd9088;
+}
+
+.bv-area-title-divider {
+  width: 60px;
+  height: 3px;
+  background-color: #bd9088;
+  margin: 0 auto;
+}
+
+.bv-area-slider-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 70px;
+}
+
+/* Luxury Swiper Navigation */
+.bv-area-nav-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  right: 10px;
+  transform: translateY(-50%);
+  z-index: 10;
+  pointer-events: none;
+}
+
+.bv-area-arrow {
+  width: 55px;
+  height: 55px;
+  background-color: #1a1a1a;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  pointer-events: auto;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  position: absolute;
+}
+
+.bv-area-arrow:hover {
+  background-color: #bd9088;
+  transform: scale(1.1);
+}
+
+.bv-area-prev { left: 0; }
+.bv-area-next { right: 0; }
+
+.bv-area-arrow::after {
+  content: '';
+  width: 12px;
+  height: 12px;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  display: block;
+}
+
+.bv-area-prev::after { transform: rotate(-135deg); margin-left: 5px; }
+.bv-area-next::after { transform: rotate(45deg); margin-right: 5px; }
+
+/* Swiper Content */
+.bv-area-swiper-instance {
+  padding: 20px 5px 40px 5px !important;
+}
+
+.bv-area-name {
+  font-weight: 700 !important;
+  letter-spacing: 0.5px;
+  margin-bottom: 5px !important;
+}
+
+.bv-area-listings {
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 500 !important;
+}
+
+.bv-area-cta-text {
+  display: block;
+  margin-top: 15px;
+  color: #bd9088;
+  font-weight: 700 !important;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.4s ease;
+}
+
+/* Pagination & CTA Footer */
+.bv-area-bottom-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.bv-area-pagination-custom {
+  display: flex !important;
+  justify-content: center;
+  gap: 12px;
+}
+
+.bv-area-pagination-custom .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: #d1d1d1;
+  opacity: 1;
+  transition: all 0.4s ease;
+}
+
+.bv-area-pagination-custom .swiper-pagination-bullet-active {
+  background: #bd9088;
+  width: 35px;
+  border-radius: 20px;
+}
+
+.bv-area-btn-luxury {
+  background-color: #1a1a1a;
+  color: #fff;
+  border: none;
+  padding: 16px 45px;
+  border-radius: 8px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.bv-area-btn-luxury:hover {
+  background-color: #bd9088;
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(189, 144, 136, 0.4);
+}
+
+@media (max-width: 1024px) {
+  .bv-area-slider-container { padding: 0 20px; }
+  .bv-area-nav-wrapper { display: none; }
+  .bv-area-main-heading { font-size: 2.5rem !important; }
+}

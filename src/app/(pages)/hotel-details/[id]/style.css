@@ -1,0 +1,431 @@
+/* .open-gallery-btn {
+  position: absolute !important;
+  bottom: 10px !important;
+  right: 10px !important;
+  background-color: #fff !important;
+  color: #000 !important;
+  border-radius: 200px !important;
+  line-height: 44px !important;
+  padding: 0 16px !important;
+  font-size: 16px !important;
+  text-transform: capitalize !important;
+  font-weight: 600 !important;
+  box-shadow: 0px 0px 10px #ccc !important;
+}
+
+.accordion-summary {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.accordion-summary p {
+  transition: color 0.3s;
+}
+
+.accordion-summary:hover p {
+  color: #a0522d; 
+}
+.accordion-summary .arrow-icon {
+  transition: transform 0.3s, color 0.3s;
+}
+
+.accordion-summary:hover .arrow-icon {
+  color: #a0522d; 
+  transform: rotate(90deg); 
+}
+
+
+.details-title{
+  color: #000;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.4em;
+  margin-bottom: 24px;
+}
+
+.details-title-booking{
+  color: #000;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.4em;
+  margin-bottom: 24px;
+}
+
+
+.details-desc{
+  margin: 0 0 10px;
+  color: #4f5e72;
+}
+
+.hotels-details .details-divider {
+  border-style: solid;
+  border-width: 1px 0px 0px 0px;
+  border-color: #9c6c69;
+  margin: 32px 0px 0px 0px;
+  padding: 32px 0px 0px 0px;
+}
+
+.hotel-booking-wrapper .card-body {
+  padding: 24px;
+}
+
+.hotel-booking-wrapper {
+  background-color: #f2f4f4 !important;
+  border: none !important;
+  border-radius: 16px !important;
+}
+
+.hotel-pricing {
+  color: #000;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.hotel-pricing span {
+  font-size: 16px;
+  font-weight: 500;
+  color: #4f5e71;
+}
+
+.hotel-booking-wrapper .tabs-container {
+  width: 100% !important;
+  padding: 20px 0px;
+  border: none;
+}
+
+.hotel-booking-wrapper .nav-tabs {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.hotel-booking-wrapper .nav-tabs .nav-item {
+  flex: 1;
+  text-align: center;
+}
+
+.hotel-booking-wrapper .nav-tabs .nav-link {
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: capitalize;
+  padding: 10px;
+  border: 1px solid #9c6c69;
+  border-radius: 0px;
+  color: #000;
+  background-color: #fff;
+  width: 100%;
+}
+
+.hotel-booking-wrapper .nav-tabs .nav-link.active {
+  background-color: #9c6c69; 
+  color: #fff; 
+  border: 1px solid #9c6c69;
+}
+
+.faq-accordion{
+  box-shadow: none !important;
+}
+
+.faq-accordion-title{
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  color: #000 !important;
+  margin-bottom: 0;
+}
+
+.share-button {
+  background-color: transparent !important;
+  color: #000 !important;
+  line-height: 44px !important;
+  padding: 0 16px !important;
+  font-size: 15px !important;
+  text-transform: capitalize !important;
+  font-weight: 400 !important;
+  box-shadow: none !important;
+}
+
+.share-button span:first-child {
+  width: 40px;
+  height: 40px;
+  padding-top: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border: 1px solid #ebebeb;
+  border-radius: 50%;
+  transition: all .3s ease;
+} */
+.open-gallery-btn {
+  position: absolute !important;
+  bottom: 10px !important;
+  right: 10px !important;
+  background-color: #fff !important;
+  color: #000 !important;
+  border-radius: 200px !important;
+  line-height: 44px !important;
+  padding: 0 16px !important;
+  font-size: 16px !important;
+  text-transform: capitalize !important;
+  font-weight: 600 !important;
+  box-shadow: 0px 0px 10px #ccc !important;
+}
+
+.accordion-summary {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.accordion-summary p {
+  transition: color 0.3s;
+}
+
+.accordion-summary:hover p {
+  color: #a0522d; /* Brownish text */
+}
+.accordion-summary .arrow-icon {
+  transition: transform 0.3s, color 0.3s;
+}
+
+.accordion-summary:hover .arrow-icon {
+  color: #a0522d; /* Brownish arrow color */
+  transform: rotate(90deg); /* Example animation on hover */
+}
+
+
+.details-title{
+  color: #000;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.4em;
+  margin-bottom: 24px;
+}
+
+.details-title-booking{
+  color: #000;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.4em;
+  margin-bottom: 24px;
+}
+
+
+.details-desc{
+  margin: 0 0 10px;
+  color: #4f5e72;
+}
+
+.hotels-details .details-divider {
+  border-style: solid;
+  border-width: 1px 0px 0px 0px;
+  border-color: #9c6c69;
+  margin: 32px 0px 0px 0px;
+  padding: 32px 0px 0px 0px;
+}
+
+.hotel-booking-wrapper .card-body {
+  padding: 24px;
+}
+
+.hotel-booking-wrapper {
+  background-color: #f2f4f4 !important;
+  border: none !important;
+  border-radius: 16px !important;
+}
+
+.hotel-pricing {
+  color: #000;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.hotel-pricing span {
+  font-size: 16px;
+  font-weight: 500;
+  color: #4f5e71;
+}
+
+.hotel-booking-wrapper .tabs-container {
+  width: 100% !important;
+  padding: 20px 0px;
+  border: none;
+}
+
+.hotel-booking-wrapper .nav-tabs {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.hotel-booking-wrapper .nav-tabs .nav-item {
+  flex: 1;
+  text-align: center;
+}
+
+.hotel-booking-wrapper .nav-tabs .nav-link {
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: capitalize;
+  padding: 10px;
+  border: 1px solid #9c6c69;
+  border-radius: 0px;
+  color: #000;
+  background-color: #fff;
+  width: 100%;
+}
+
+.hotel-booking-wrapper .nav-tabs .nav-link.active {
+  background-color: #9c6c69; /* Active tab background color */
+  color: #fff; /* Active tab text color */
+  border: 1px solid #9c6c69;
+}
+
+.faq-accordion{
+  box-shadow: none !important;
+}
+
+.faq-accordion-title{
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  color: #000 !important;
+  margin-bottom: 0;
+}
+
+.share-button {
+  background-color: transparent !important;
+  color: #000 !important;
+  line-height: 44px !important;
+  padding: 0 16px !important;
+  font-size: 15px !important;
+  text-transform: capitalize !important;
+  font-weight: 400 !important;
+  box-shadow: none !important;
+}
+
+.share-button span:first-child {
+  width: 40px;
+  height: 40px;
+  padding-top: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border: 1px solid #ebebeb;
+  border-radius: 50%;
+  transition: all .3s ease;
+}
+.custom-dropdown-guest {
+  position: relative;
+}
+
+.dropdown-wrapper-guest {
+  position: relative;
+}
+
+.dropdown-header-guest {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #fff;
+  color: #7C7C7C;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-options-guest {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #fff;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  z-index: 1000;
+  max-height: 200px; /* Set a fixed height */
+  overflow-y: auto;  /* Enable scrolling if content exceeds max-height */
+}
+
+.dropdown-item-guest {
+  padding: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-item-guest:hover {
+  background-color: #f0f0f0;
+}
+.amount-table {
+  width: 100%;
+  border-collapse: collapse; /* Ensures borders don't have gaps */
+}
+
+.amount-table td {
+  padding: 10px;
+  border: 1px solid #ddd; /* Light grey border for table cells */
+}
+
+.amount-table tr:last-child td {
+  border-bottom: 2px solid #000; /* Bold bottom border for the last row */
+}
+
+.amount-table tr td:first-child {
+  width: 50%; /* You can adjust the width of the first column (for descriptions) */
+}
+
+.amount-table tr td:last-child {
+  text-align: right; /* Align the amount to the right */
+}
+.Check-availibilty-btn{
+  padding: 8px 5px;
+  border: 2px solid #9c6c69;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: .3s;
+  z-index: 1;
+  font-family: inherit;
+  color: #9c6c69;
+  width: 100%;
+}
+
+.Check-availibilty-btn::before {
+  content: '';
+  width: 0;
+  height: 700%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: #9c6c69;
+  transition: .5s ease;
+  display: block;
+  z-index: -1;
+}
+
+.Check-availibilty-btn:hover::before {
+  width: 105%;
+}
+
+.Check-availibilty-btn:hover {
+  color: #ffffff;
+}
+@media (max-width: 768px) {
+  .date-range-container {
+    flex-direction: column; /* Stack months vertically */
+    width: 100%; /* Make it take full width */
+  }
+
+  .date-range-container .rdrMonths {
+    flex-wrap: wrap; /* Ensure months wrap */
+  }
+
+  .date-range-container .rdrMonth {
+    width: 100%; /* Make each month full width */
+  }
+}

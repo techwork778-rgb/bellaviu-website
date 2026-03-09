@@ -1,0 +1,80 @@
+.propertySection {
+    background-color: #f8f9fa;
+    padding: 60px 30px;;
+  }
+
+  .heading-start {
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+    color: #9c6c69;
+    margin-bottom: 20px;
+  }
+  
+  .service-card {
+    margin-bottom: 30px; 
+    padding: 12px 10px;
+  }
+  
+  /* .card {
+    background-color: #e8f8ff;
+    border-radius: 12px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, background-color 0.3s;
+    cursor: pointer;
+    gap: 8px;
+    padding: 30px 30px 10px 10px;
+  } */
+  
+  .service-card:hover .card {
+    background-color: #9c6c69; 
+    color: #ffffff; 
+    transform: translateY(5px); 
+  }
+  
+  .iconContainer {
+    background-color: #9c6c69;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 0 auto;
+    color: #ffffff;
+    transition: background-color 0.3s;
+  }
+  
+  .service-card:hover .iconContainer {
+    color: #9c6c69;
+    background-color: #ffffff;
+  }
+  
+  .service-card:hover {
+    background-color: #9c6c69; 
+    border-radius: 30px;
+    padding: 12px 10px;
+  }
+  
+  .h3list {
+    color: #9c6c69;
+    transition: color 0.3s;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  
+  .service-card:hover h3 {
+    color: #ffffff;
+  }
+  
+  .plist {
+    color: #000000a5;
+    font-size: 0.90rem;
+    font-weight: 400;
+    transition: color 0.3s;
+  }
+  
+  .service-card:hover p {
+    color: #f0f0f0;
+  }
+  

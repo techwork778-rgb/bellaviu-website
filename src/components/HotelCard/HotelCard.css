@@ -1,0 +1,101 @@
+/* Card container and layout */
+.card-container-main {
+  box-shadow: rgba(50, 53, 56, 0.2) 0px 8px 24px !important;
+  border: 1px solid #ccc;
+  border-radius: 18px;
+  overflow: hidden;
+  background-color: #f3f4f4;
+  position: relative; /* Make the card container a positioned element */
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.3s ease-in-out;
+  font-family: "Urbanist", sans-serif !important;
+  display: block;
+}
+
+.card-container-main:hover .card-media {
+  transform: scale(1.1);
+}
+/* Hover zoom effect for the image */
+.card-media {
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-wrapper{
+  overflow: hidden;
+}
+.card-media:hover {
+  transform: scale(1.1); /* Zoom in effect */
+}
+
+/* Bookmark icon at the top-right corner */
+.bookmark-icon {
+  position: absolute; /* Position it absolutely within the card */
+  top: 8px;
+  right: 8px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding: 6px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow to the icon */
+  cursor: pointer;
+  z-index: 1; /* Ensure it stays above other elements */
+}
+
+/* Style for the hotel name with text truncation */
+.hotel-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  display: block;
+  font-family: "Urbanist", sans-serif !important;
+}
+
+.hotel-name:hover {
+  cursor: pointer;
+}
+
+/* Widget style (Room Size, Bed, Max Occupancy) */
+.widget-item {
+  display: flex;
+  align-items: center;
+  font-family: "Urbanist", sans-serif !important;
+  margin-bottom: 12px;
+}
+
+.widget-item .icon-card {
+  margin-right: 8px;
+}
+
+.widget-item .text {
+  font-size: 0.875rem;
+  font-family: "Urbanist", sans-serif !important;
+  color: #4f5e71;
+}
+
+/* Card actions (Price & Button) */
+.card-actions-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 16px;
+}
+
+.card-container-main .pricing {
+  font-size: 22px;
+  color: #000;
+  font-weight: 700;
+  padding-left: 10px;
+  font-family: "Urbanist", sans-serif !important;
+}
+
+.card-container-main .pricing span {
+  font-size: 14px;
+  font-weight: 500;
+  color: #4f5e71;
+  font-family: "Urbanist", sans-serif !important;
+}

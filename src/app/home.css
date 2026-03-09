@@ -1,0 +1,147 @@
+/*Ensure font is loaded in your layout or head */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+/* Color Variable based on your theme: rgb(189, 144, 136) -> #bd9088 (approx #9c6c69 used in code) */
+:root {
+  --rosewood: #9c6c69;
+  --rosewood-light: rgba(156, 108, 105, 0.1);
+}
+
+/* Metric Card Design */
+.premium-metric-card {
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  height: 100%;
+  border-radius: 12px;
+}
+
+.premium-metric-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(156, 108, 105, 0.15);
+}
+
+/* FAQ Design */
+.rosewood-divider {
+  width: 60px;
+  height: 3px;
+  background-color: var(--rosewood);
+  margin: 20px auto;
+}
+
+.premium-faq-accordion {
+  background-color: #fff !important;
+  border: 1px solid rgba(156, 108, 105, 0.2) !important;
+  border-radius: 12px !important;
+  transition: all 0.3s ease;
+}
+
+.premium-faq-accordion:before {
+  display: none;
+}
+
+.premium-faq-accordion.Mui-expanded {
+  border-color: var(--rosewood) !important;
+  box-shadow: 0 8px 25px rgba(156, 108, 105, 0.08) !important;
+  margin-bottom: 20px !important;
+}
+
+.premium-faq-accordion .MuiAccordionSummary-root {
+  padding: 10px 24px;
+}
+
+.premium-faq-accordion .MuiAccordionDetails-root {
+  padding: 0 24px 24px;
+}
+
+/* Existing Logic CSS kept as is below */
+.hero-section .hero-wrapper {
+  height: 90vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/hero-bg.webp");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .mobile-search-container {
+    display: flex !important;
+    flex-direction: column;
+    width: 100vw;
+    padding: 24px;
+    max-width: 800px;
+  }
+}
+
+/* Boutique Metric Section */
+.boutique-metric-card {
+  position: relative;
+  padding: 60px 30px;
+  background: #ffffff;
+  border: 1px solid rgba(189, 144, 136, 0.15); /* Very light rosewood border */
+  text-align: center;
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  height: 100%;
+}
+
+.boutique-metric-card:hover {
+  border-color: rgb(189, 144, 136);
+  transform: translateY(-10px);
+  background-color: #fafaf9; /* Subtle cream shift */
+}
+
+.metric-header {
+  margin-bottom: 40px;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.metric-value {
+  font-family: 'Playfair Display', serif !important;
+  font-size: 3.5rem !important;
+  color: #2c2c2c;
+  line-height: 1 !important;
+  font-weight: 500 !important;
+}
+
+.star-row {
+  color: rgb(189, 144, 136);
+  font-size: 1.5rem;
+  letter-spacing: 5px;
+}
+
+.metric-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-line {
+  width: 30px;
+  height: 1px;
+  background-color: rgb(189, 144, 136);
+  margin-bottom: 20px;
+  transition: width 0.4s ease;
+}
+
+.boutique-metric-card:hover .footer-line {
+  width: 60px;
+}
+
+.metric-label {
+  font-family: 'Urbanist', sans-serif !important;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 0.75rem !important;
+  color: #888;
+  font-weight: 700 !important;
+}
+
+.premium-star-gold {
+  color: rgb(189, 144, 136);
+}
+

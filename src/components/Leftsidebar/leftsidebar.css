@@ -1,0 +1,48 @@
+.leftsidebar-wrapper div {
+    background: #101924 !important;
+    /* color: #8094ae !important; */
+    font-family: "Urbanist", sans-serif !important;
+}
+
+.leftsidebar-wrapper .leftsidebar-list .leftsidebar-list-item-name span {
+    /* color: #6e82a5; */
+    font-family: "Urbanist", sans-serif !important;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: .05em;
+    text-transform: none;
+    line-height: 1.25rem;
+}
+
+.leftsidebar-wrapper .leftsidebar-list .leftsidebar-list-item-icon {
+    color: #6e82a5 !important;
+    font-size: 24px;
+}
+
+.header-wrapper {
+    border-bottom: 1px solid #e5e9f2 !important;
+    background-color: #fff !important;
+    box-shadow: none !important;
+    font-family: "Urbanist", sans-serif !important;
+}
+
+.header-wrapper .user-toggle {
+    cursor: pointer;
+}
+
+.header-wrapper .user-toggle .user-status {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1;
+    padding-top: .125rem;
+    padding-bottom: .375rem;
+    margin: 0;
+}
+
+.header-wrapper .user-toggle .user-name {
+    color: #526484;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 700;
+    margin: 0;
+}

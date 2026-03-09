@@ -1,0 +1,49 @@
+/* HeadersectionOne.css */
+
+/* Main container */
+.header-section-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+/* Image styling */
+.header-image {
+  width: 100%;
+  max-width: 670px;
+  height: 70%;
+}
+
+/* Typography styling */
+.header-title {
+  color: rgb(139 115 95);
+  font-weight: bold;
+}
+
+.header-subtitle {
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.header-description {
+  margin-bottom: 24px;
+}
+
+.icon-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  /* gap: 10px; */
+}
+
+.icon-text {
+  margin-left: 13px;
+}
+
+.book-now-button {
+  /* margin-top: 24px; */
+  color: white;
+  background-color: #E2B5B0;
+  padding: 8px 40px;
+}

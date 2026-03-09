@@ -1,0 +1,119 @@
+/* General Form Styles */
+.form-container {
+    padding: 20px;
+    /* max-width: 600px; */
+    /* margin: 80px auto; */
+    margin-top: 80px;
+    /* background-color: lightblue; */
+    background-color: #f0f2f5;
+  }
+  .my-form{
+    background-color: white;
+  
+    padding: 30px;
+  }
+  
+  .input-field {
+    margin-bottom: 20px;
+  }
+  .back-button{
+    padding: 8px 25px;
+    background-color: white;
+    border: 1px solid gray;
+  }
+  .Add-Property{
+    font-weight: 500;
+    font-size: 20px;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 0;
+  }
+  
+  .input.error {
+    /* border-color: red; */
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 12px;
+  }
+  
+  .required {
+    color: red;
+  }
+  
+  .form-actions {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .submit-button {
+    margin-top: 15px;
+    background-color: #a17e50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .submit-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Status messages */
+  .status {
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .success {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .error {
+    /* background-color: #dc3545; */
+    /* border: 1px solid red; */
+    color: white;
+  }
+  
+  /* ============================================= */
+  
+  /* Remove default background on select in webkit browsers */
+  select {
+    -webkit-appearance: none; /* Removes default arrow in Chrome and Safari */
+    -moz-appearance: none; /* Removes default arrow in Firefox */
+    appearance: none; /* Modern browsers */
+    background-color: white; /* Set your desired background color */
+    border: 1px solid #ccc; /* Customize border */
+    padding: 10px; /* Adjust padding */
+    font-size: 16px; /* Customize font size */
+    color: #333; /* Customize text color */
+    width: 100%; /* Make it responsive */
+    border-radius: 0; /* Remove border-radius if you don't want it */
+  }
+  
+  /* Optionally style the dropdown arrow */
+  select::after {
+    content: 'â–¼'; /* Custom arrow symbol */
+    position: absolute;
+    right: 10px;
+    pointer-events: none;
+  }
+  
+  /* Hover state */
+  select:hover {
+    border-color: #999; /* Change border on hover */
+  }
+  
+  /* Focus state */
+  select:focus {
+    outline: none;
+    border-color: #666; /* Change border color when focused */
+  }
