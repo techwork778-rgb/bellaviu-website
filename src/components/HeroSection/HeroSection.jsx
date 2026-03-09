@@ -50,11 +50,11 @@ export default function HeroSection() {
             </Typography>
           </motion.div>
 
-          <motion.div variants={fadeInUp}>
+          {/* <motion.div variants={fadeInUp}>
             <Typography variant="h6" className="hero-description my-3">
               Curated selection of furnished apartments and bespoke luxury villas.
             </Typography>
-          </motion.div>
+          </motion.div> */}
 
           <motion.div variants={fadeInUp} className="d-flex justify-content-center gap-4 mb-3 my-4">
             <Link href="/hotel-filter" className="text-decoration-none">
