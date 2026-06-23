@@ -48,8 +48,7 @@ const Footer = () => {
           >
             <p>
               <BusinessIcon className="me-2" style={{ fontSize: "16px" }} />
-              Marasi Drive, B2B Tower, Office Number - 1515, PO Box - 417679,
-              Business Bay, Dubai, United Arab Emirates
+              Office 1802,Opal Tower Burj Khalifa Blvd,Business Bay Dubai, UAE P.O. Box 417679
             </p>
           </div>
         </div>
