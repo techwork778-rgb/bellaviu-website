@@ -33,7 +33,7 @@ export async function POST(req) {
     }
 
     // Check if the user already exists
-    const checkUserQuery = `SELECT user_id, first_name, last_name, email_id FROM users WHERE email_id = ?`;
+    const checkUserQuery = `SELECT user_id,first_name,last_name,email_id,type FROM users WHERE email_id = ?`;
     console.log('Executing query:', checkUserQuery, 'with email:', email_id);
     
     const [existingUser] = await database.execute(checkUserQuery, [email_id]);
@@ -61,7 +61,7 @@ export async function POST(req) {
 
     // Return the newly created user data
     const [newUser] = await database.execute(
-      "SELECT user_id, first_name, last_name, email_id FROM users WHERE email_id = ?",
+      "SELECT user_id,first_name,last_name,email_id,type FROM users WHERE email_id = ?",
       [email_id]
     );
     
