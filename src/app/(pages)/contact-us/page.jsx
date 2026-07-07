@@ -270,7 +270,7 @@ const ContactPage = () => {
           <Grid item xs={12} md={6} className="mapWrapper">
             <PlaceIcon />
             <Typography className="text-bold map-address mb-2">
-              Marasi Drive, B2B Tower, Office Number - 1515, PO Box - 417679, Business Bay, Dubai.
+              Office 1802,Opal Tower Burj Khalifa Blvd,Business Bay Dubai, UAE P.O. Box 417679
             </Typography>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14441.45694423956!2d55.26632081164302!3d25.1909363728035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6824f0311909%3A0x65950f712e2bef2!2sB2B%20Office%20Tower%20-%20Marasi%20Dr%20-%20Business%20Bay%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sin!4v1733207783806!5m2!1sen!2sin"
